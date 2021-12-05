@@ -6,6 +6,6 @@ app = Api(app)
 
 class getProducts(Resource):
     def get(self):
-        return Response("<h1>Flask</h1><p>You visited: /%s</p>" % (path), mimetype="text/html")
+        return "<h1>Hi</h1>"
 
 app.add_resource(getProducts, '/api/getproducts')
