@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "Potato",
+        "image_url": "https://img.etimg.com/thumb/msid-72862126,width-210,imgsize-111140,,resizemode-4,quality-100/potato-getty.jpg",
+        "price": 3,
+        "id": 0,
+        "currency": "AED"
+    },
+
+    "1": {
+        "name": "Tomato",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg",
+        "price": 1.5,
+        "id": 1,
+        "currency": "AED"
+    }
+}
