@@ -1,6 +1,7 @@
 from flask import Flask, escape
 from flask_cors import CORS
 from flask_restful import Resource, Api, reqparse
+from waitress import serve
 import sqlite3
 import json
 import os
@@ -28,5 +29,4 @@ class getProducts(Resource):
 
 api.add_resource(getProducts, '/api/getproducts')
 
-if __name__ == '__main__':
-    app.run(debug=True, port=4000)
+serve(app, host='0.0.0.0', port=8080)
