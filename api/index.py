@@ -7,4 +7,4 @@ app = Api(app1)
 class getProducts(Resource):
     def get(self):
         return "hi"
-api.add_resource(getProducts, '/api/')
+app.add_resource(getProducts, '/api/')
