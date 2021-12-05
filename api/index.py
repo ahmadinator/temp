@@ -1,6 +1,10 @@
-from flask import Flask, Response
-app = Flask(__name__)
+from flask import Flask, escape
+from flask_restful import Resource, Api, reqparse
 
-@app.route('/api/')
-def catch_all():
-    return Response("<h1>Flask</h1><p>Hi</p>", mimetype="text/html")
+app1 = Flask(__name__)
+app = Api(app1)
+
+class getProducts(Resource):
+    def get(self):
+        return "hi"
+api.add_resource(getProducts, '/api/')
