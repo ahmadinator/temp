@@ -11,3 +11,4 @@ websocket-client==1.2.1
 websockets==10.1
 Werkzeug==2.0.2
 wsproto==1.0.0
+waitress==2.0.0
