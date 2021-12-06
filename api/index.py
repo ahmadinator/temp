@@ -7,5 +7,9 @@ def hi():
     return "hi"
 
 @app.route("/api/getproducts")
-def products():
+def productsA():
     return "products"
+
+@app.route("/api/lol")
+def lolxd():
+    return "lol??"
