@@ -1,11 +1,11 @@
 from flask import Flask
+from flask_restful import Resource, Api
 
 app = Flask(__name__)
+api = Api(app)
 
-@app.route("/api/getproducts/")
-def productsA():
-    return "products"
+class getProducts(Resource):
+    def get(self):
+        return "hi"
 
-@app.route("/api/lol/")
-def lolxd():
-    return "lol??"
+api.add_resource(getProducts, '/api/getproducts')
